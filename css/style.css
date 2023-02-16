@@ -1,0 +1,87 @@
+body {
+  margin: 3rem 2rem;
+  font-family: "Work Sans", "Segoe UI", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: #F0EEE4;
+  color: #757575;
+  letter-spacing: 0.15rem;
+  line-height: 2.75rem;
+}
+hr {
+  border: 7px #aeb8fe solid;
+  margin: 1rem;
+}
+
+.myself-image {
+  float: left;
+  box-shadow: 5px 10px #888888;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+.joke {
+  text-decoration: line-through;
+}
+
+.graduations {
+  margin: 2rem 1rem;
+}
+
+.projects {
+  width: 100%;
+}
+
+.projects h1 {
+  margin: 0 1rem;
+}
+
+.projects img {
+  float: left;
+  border: 3px solid #e1b07e;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
+  margin: 0.5rem 1rem;
+}
+
+.projects img:hover {
+  filter: saturate(5%);
+  padding: 1.25rem;
+}
+
+.links {
+  float: left;
+  width: 100%;
+}
+
+.links h1 {
+  margin: 0 1rem;
+}
+
+.links ul li {
+  padding: 0.5rem 0;
+}
+
+.links ul li a {
+  color: #43156e;
+  font-size: 1.15rem;
+  letter-spacing: .4rem;
+  text-decoration: none;
+  transition: all .1s ease-out
+}
+
+.links ul li a:hover {
+  color: #9141db;
+  text-decoration: underline;
+  letter-spacing: .6rem;
+}
+
+.footer {
+  float: left;
+  width: 100%;
+}
+
+.footer h3 {
+  text-align: center;
+}
