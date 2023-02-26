@@ -3,7 +3,7 @@ body {
   font-family: "Work Sans", "Segoe UI", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 1.15rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   color: #757575;
   letter-spacing: 0.175rem;
   line-height: 2.75rem;
@@ -21,6 +21,28 @@ hr {
   filter: grayscale(100%);
   opacity: 0.2;
 }
+
+.languages-icons {
+  background: rgba(0, 0, 0, .4);
+  max-width: 128px;
+  height: 72px;
+  display: inline;
+  position: fixed;
+  right: 3rem;
+  top: 0;
+  padding: 0 .6rem;
+}
+
+.languages-icons img {
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.languages-icons img:hover {
+  opacity: .3;
+}
+
 .joke {
   text-decoration: line-through;
 }
@@ -66,15 +88,15 @@ hr {
 .links ul li a {
   color: #43156e;
   font-size: 1.15rem;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
   text-decoration: none;
-  transition: all .1s ease-out
+  transition: all 0.1s ease-out;
 }
 
 .links ul li a:hover {
   color: #9141db;
   text-decoration: underline;
-  letter-spacing: .6rem;
+  letter-spacing: 0.6rem;
 }
 
 .footer {
