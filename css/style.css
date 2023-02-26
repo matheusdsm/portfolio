@@ -2,10 +2,10 @@ body {
   margin: 3rem 2rem;
   font-family: "Work Sans", "Segoe UI", "Helvetica", sans-serif;
   font-weight: 500;
-  font-size: 1.1rem;
-  background-color: #F0EEE4;
+  font-size: 1.15rem;
+  background-color: #FAF9F6;
   color: #757575;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.175rem;
   line-height: 2.75rem;
 }
 hr {
@@ -30,7 +30,7 @@ hr {
 }
 
 .projects {
-  width: 100%;
+  max-width: 100%;
 }
 
 .projects h1 {
@@ -38,7 +38,7 @@ hr {
 }
 
 .projects img {
-  float: left;
+  display: inline-block;
   border: 3px solid #e1b07e;
   padding: 1rem;
   transition: all 0.2s ease-out;
@@ -46,7 +46,7 @@ hr {
 }
 
 .projects img:hover {
-  filter: saturate(5%);
+  filter: saturate(2.5%);
   padding: 1.25rem;
 }
 
