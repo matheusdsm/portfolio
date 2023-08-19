@@ -14,9 +14,13 @@ hr {
   margin: 1rem;
 }
 
+h1 {
+  color: #aeb8fe;
+}
+
 .myself-image {
   float: left;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px rgba(0, 0, 0, .2);
   padding: 0 1rem;
   margin: 0 2rem;
   filter: grayscale(100%);
