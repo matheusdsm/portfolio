@@ -99,7 +99,6 @@ h1 {
 
 .projects img:hover{
   filter: saturate(2.5%);
-  padding: 1.05rem;
 }
 
 .graduations img {
