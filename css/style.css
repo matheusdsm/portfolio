@@ -64,7 +64,7 @@ h1 {
   text-decoration: line-through;
 }
 
-.graduations {
+.graduations, .projects {
   overflow-y: scroll;
 }
 
