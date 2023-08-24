@@ -16,6 +16,7 @@ hr {
 
 h1 {
   color: #aeb8fe;
+  font-size: 1.85rem;
 }
 
 .shadow {
@@ -129,7 +130,7 @@ a:hover {
   width: 100%;
 }
 
-.footer h3 {
+.footer h4 {
   text-align: center;
 }
 
