@@ -65,7 +65,7 @@ h1 {
 }
 
 .graduations, .projects {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .graduations,
