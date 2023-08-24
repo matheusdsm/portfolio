@@ -93,6 +93,10 @@ h1 {
   padding: 1.05rem;
 }
 
+.graduations img {
+  margin: 0;
+}
+
 .links {
   float: left;
   width: 100%;
