@@ -8,6 +8,7 @@ body {
   letter-spacing: 0.145rem;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
+  background-color: rgba(240,248,255, .2);
 }
 hr {
   border: 7px #aeb8fe solid;
