@@ -93,12 +93,13 @@ h1 {
   height: 300px;
 }
 
-.projects img:hover, .graduations img:hover {
+.projects img:hover{
   filter: saturate(2.5%);
   padding: 1.05rem;
 }
 
 .graduations img {
+  height: 524px;
   margin: 0;
 }
 
