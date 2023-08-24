@@ -78,7 +78,7 @@ h1 {
   margin: 0 1rem;
 }
 
-.projects img {
+.projects img, .graduations img {
   display: inline-block;
   border: 3px solid #e1b07e;
   padding: 1rem;
@@ -88,7 +88,7 @@ h1 {
   height: 300px;
 }
 
-.projects img:hover {
+.projects img:hover, .graduations img:hover {
   filter: saturate(2.5%);
   padding: 1.05rem;
 }
