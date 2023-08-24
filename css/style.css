@@ -64,6 +64,10 @@ h1 {
   text-decoration: line-through;
 }
 
+.graduations {
+  overflow-y: scroll;
+}
+
 .graduations,
 .overview {
   margin: 2rem 1rem;
