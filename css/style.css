@@ -39,7 +39,7 @@ ul li::marker {
   box-shadow: 5px 10px rgba(0, 0, 0, .2);
   padding: 0 1rem;
   margin: 1rem 1.5rem;
-  filter: grayscale(100%);
+  filter: grayscale(50%);
   opacity: 0.2;
 }
 
