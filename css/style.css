@@ -17,12 +17,12 @@ hr {
 }
 
 h1 {
-  color: #aeb8fe;
+  color: #bfc7fe;
   font-size: 1.85rem;
 }
 
 ul li::marker {
-  color: #aeb8fe;
+  color: #bfc7fe;
 }
 
 .shadow {
