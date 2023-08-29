@@ -93,7 +93,7 @@ ul li::marker {
 
 .projects img, .graduations img {
   display: inline-block;
-  border: 3px solid #e1b07e;
+  border: 3px solid #eed2b5;
   padding: 1rem;
   transition: all 0.2s ease-out;
   margin: 0.5rem 1rem;
