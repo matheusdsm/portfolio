@@ -39,8 +39,7 @@ ul li::marker {
   box-shadow: 5px 10px rgba(0, 0, 0, .2);
   padding: 0 1rem;
   margin: 1rem 1.5rem;
-  filter: grayscale(50%);
-  opacity: 0.2;
+  opacity: 0.35;
 }
 
 .languages-icons {
@@ -68,7 +67,7 @@ ul li::marker {
   text-decoration: line-through;
 }
 
-.graduations, .projects {
+.graduations, .projects, .graduations img, .projects img {
   overflow-y: auto;
 }
 
