@@ -1,19 +1,19 @@
 body {
-  margin: 3rem 2rem;
+  margin: 0 2rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   color: rgba(0, 0, 0, .75);
-  letter-spacing: 0.05rem;
-  line-height: 1.7;
+
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   background-color: rgba(240,248,255, .1);
   background: linear-gradient(110deg, #f0f8ff1a 86%, #fffef5 10%);
 }
 hr {
   border: 6px #aeb solid;
-  margin: 1rem;
+  margin: 2rem 2rem;
 }
 
 h1 {
@@ -29,9 +29,13 @@ ul li::marker {
 }
 
 .main-container {
-  max-width: 1600px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.main-content {
+  margin: 2rem 0;
 }
 
 .myself-image {
@@ -48,7 +52,7 @@ ul li::marker {
   height: 72px;
   display: inline;
   position: fixed;
-  right: 3rem;
+  right: 4rem;
   top: 0;
   padding: 0 0.6rem;
 }
@@ -73,7 +77,7 @@ ul li::marker {
 
 .graduations,
 .overview {
-  margin: 2rem 1rem;
+  margin: 0 2rem;
 }
 
 .graduations hr {
@@ -81,13 +85,9 @@ ul li::marker {
   margin-left: 0;
 }
 
-.projects {
-  max-width: 100%;
-}
-
 .projects h1,
-.main-content h1 {
-  margin: 0 1rem;
+.main-content h1{
+  margin: 0 2rem;
 }
 
 .projects img, .graduations img {
@@ -96,7 +96,7 @@ ul li::marker {
   padding: 1rem;
   transition: all 0.2s ease-out;
   margin: 0.5rem 1rem;
-  max-width: 100%;
+  max-width: 928px;
 }
 
 .projects img:hover{
@@ -107,17 +107,22 @@ ul li::marker {
   margin: 0;
 }
 
+.projects img {
+  margin: 0 2rem;
+}
+
 .links {
   float: left;
   width: 100%;
 }
 
 .links h1 {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 .links ul li {
-  padding: 0.5rem 0;
+  padding: 0;
+  margin: 2rem 0.5rem;
 }
 
 .links ul li a {
@@ -143,6 +148,7 @@ a:hover {
 .footer {
   float: left;
   width: 100%;
+  background: #fff;
 }
 
 .footer h4 {
