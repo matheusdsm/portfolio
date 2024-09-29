@@ -1,27 +1,49 @@
 body {
-  margin: 0 2rem;
+  margin: 0;
+  font-size: 16px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
-  font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: rgba(0, 0, 0, .75);
-
-  line-height: 1.5;
+  line-height: 1.625;
   text-rendering: optimizeLegibility;
   background-color: rgba(240,248,255, .1);
-  background: linear-gradient(110deg, #f0f8ff1a 86%, #fffef5 10%);
+  background: linear-gradient(110deg, #f0f8ff1a 97.5%, #bae6fd  2.5%);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0a0a0a;
+    color: #fff;
+  }
+  a {
+    color: #7dd3fc !important;
+  }
+
+  .footer {
+    background: #111 !important;
+    color: white;
+  }
+
+}
+
 hr {
-  border: 6px #aeb solid;
-  margin: 2rem 2rem;
+  border: 2px #aeb solid;
+  margin: 1.75rem 2rem;
 }
 
 h1 {
-  font-size: 1.85rem;
+  font-size: 2rem;
 }
 
 ul li::marker {
   color: #bfc7fe;
+}
+
+a {
+  color: #500724;
 }
 
 .shadow {
@@ -32,29 +54,46 @@ ul li::marker {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .main-content {
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+.main-content h1 {
+  position: relative;
+  top: .875rem;
 }
 
 .myself-image {
   float: left;
-  box-shadow: 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 1rem 1rem rgba(0, 0, 0, .5);
   padding: 0 1rem;
-  margin: 1rem 1.5rem;
+  margin: .75rem 2rem;
   opacity: 0.35;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, .05);
+  overflow: hidden;
+}
+
+.myself-image img {
+  position: relative;
+  top: 1rem;
+  z-index: -1;
 }
 
 .languages-icons {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, .75);
   max-width: 128px;
   height: 72px;
   display: inline;
   position: fixed;
-  right: 4rem;
+  right: 3.85rem;
   top: 0;
-  padding: 0 0.6rem;
+  padding: 0 0.75rem;
 }
 
 .languages-icons img {
@@ -67,8 +106,14 @@ ul li::marker {
   opacity: 0.3;
 }
 
-.joke {
+.joke a{
   text-decoration: line-through;
+  margin: .5rem;
+}
+
+.overview a{
+  position: relative;
+  top: 1.2rem;
 }
 
 .graduations, .projects, .graduations img, .projects img {
@@ -93,10 +138,10 @@ ul li::marker {
 .projects img, .graduations img {
   display: inline-block;
   border: 3px solid #eed2b5;
-  padding: 1rem;
+  padding: .125rem;
   transition: all 0.2s ease-out;
   margin: 0.5rem 1rem;
-  max-width: 928px;
+  max-width: 950px;
 }
 
 .projects img:hover{
@@ -127,7 +172,7 @@ ul li::marker {
 
 .links ul li a {
   color: #43156e;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.25rem;
   text-decoration: none;
   transition: all 0.1s ease-out;
 }
@@ -135,14 +180,14 @@ ul li::marker {
 a {
   transition: all 0.1s ease-out;
   color: #43156e;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.25rem;
 }
 
 .links ul li a:hover,
 a:hover {
   color: #9141db;
   text-decoration: underline;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.375rem;
 }
 
 .footer {
