@@ -3,13 +3,16 @@ body {
   font-size: 16px;
   font-family: Arial, sans-serif;
   font-weight: 300;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(0, 0, 0, .75);
   line-height: 1.625;
   text-rendering: optimizeLegibility;
-  background-color: rgba(240,248,255, .1);
-  background: linear-gradient(110deg, #f0f8ff1a 97.5%, #bae6fd  2.5%);
+  background-color: rgba(240, 248, 255, .1);
+}
+
+:root {
+  --container-size: 800px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +20,7 @@ body {
     background-color: #0a0a0a;
     color: #fff;
   }
+
   a {
     color: #7dd3fc !important;
   }
@@ -50,12 +54,10 @@ a {
 }
 
 .main-container {
-  max-width: 1024px;
+  max-width: var(--container-size);
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: relative;
 }
 
 .main-content {
@@ -64,14 +66,14 @@ a {
 
 .main-content h1 {
   position: relative;
-  top: .875rem;
+  top: .75rem;
 }
 
 .myself-image {
-  float: left;
+  max-width: 210px;
   box-shadow: 1rem 1rem rgba(0, 0, 0, .5);
-  padding: 0 1rem;
-  margin: .75rem 2rem;
+  padding: .5rem 1rem;
+  margin: .75rem auto;
   opacity: 1;
   z-index: 0;
   background-color: rgba(255, 255, 255, .05);
@@ -84,38 +86,22 @@ a {
   z-index: -1;
 }
 
-.languages-icons {
-  background: rgba(0, 0, 0, .75);
-  max-width: 128px;
-  height: 72px;
-  display: inline;
-  position: fixed;
-  right: 2rem;
-  top: 0;
-  padding: 0 0.75rem;
-}
-
-.languages-icons img {
-  margin-top: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-}
-
 .languages-icons img:hover {
   opacity: 0.3;
 }
 
-.joke a{
+.joke a {
   text-decoration: line-through;
-  margin: .5rem;
 }
 
-.overview a{
+.overview a {
   position: relative;
-  top: 1.2rem;
 }
 
-.graduations, .projects, .graduations img, .projects img {
+.graduations,
+.projects,
+.graduations img,
+.projects img {
   overflow-y: auto;
 }
 
@@ -130,28 +116,26 @@ a {
 }
 
 .projects h1,
-.main-content h1{
+.main-content h1 {
   margin: 0 2rem;
 }
 
-.projects img, .graduations img {
+.projects img,
+.graduations img {
   display: inline-block;
   border: 3px solid #eed2b5;
   padding: .125rem;
   transition: all 0.2s ease-out;
   margin: 0.5rem 1rem;
-  max-width: 950px;
+  max-width: 728px;
 }
 
-.projects img:hover{
+.projects img:hover {
   filter: saturate(2.5%);
 }
 
+.projects img,
 .graduations img {
-  margin: 0;
-}
-
-.projects img {
   margin: 0 2rem;
 }
 
@@ -166,7 +150,7 @@ a {
 
 .links ul li {
   padding: 0;
-  margin: 2rem 0.5rem;
+  margin: 1.75rem 0.5rem;
 }
 
 .links ul li a {
@@ -199,4 +183,73 @@ a:hover {
   text-align: center;
 }
 
+.up-button {
+  position: absolute;
+  right: 2.25rem;
+}
 
+.up-button a {
+  position: fixed;
+  text-decoration: none;
+  padding: .25rem;
+  font-size: 1.3rem;
+  width: 1.8rem;
+}
+
+.up-button a:active {
+  background: #aeb;
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* GG QWEN */
+
+  .myself-image {
+    /* Remover float e definir margens automáticas para centralizar o contêiner */
+    float: none;
+    /* Isso substitui qualquer float anterior */
+    margin: 0.75rem auto;
+    /* Margem superior/inferior e auto para esquerda/direita */
+    /* Definir uma largura desejada */
+    width: 80%;
+    /* Opcional: centralizar o conteúdo interno também */
+    text-align: center;
+
+    /* Se quiser centralizar verticalmente também, pode usar flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Ajuste a altura se necessário, ou remova para altura automática */
+    /* height: [altura_desejada]; */
+    background: transparent;
+  }
+
+  /* Ajustar a imagem dentro do contêiner centralizado */
+  .myself-image img {
+    /* Remover o 'position: relative' e o 'top' que desalinham */
+    position: static;
+    /* ou remova esta linha, o padrão é 'static' */
+    top: auto;
+    /* Garante que o 'top' original não tenha efeito */
+    /* Manter a responsividade */
+    max-width: 100%;
+    height: auto;
+    /* Remover qualquer margem ou deslocamento indesejado */
+    margin: 0;
+  }
+
+  /* Se estiver usando 'display: flex' no .myself-image, talvez precise redefinir */
+  .myself-image * {
+    /* Garante que outros estilos filhos não interfiram */
+    box-sizing: border-box;
+  }
+
+  .projects img {
+    width: 100%;
+    height: auto;
+  }
+
+}
