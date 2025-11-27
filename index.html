@@ -1,128 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Desenvolvedor de software especializado em padrões RFC & normas ISO"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Desenvolvedor de software especializado em padrões RFC & normas ISO" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap"
+            rel="stylesheet"
+        />
 
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
+        <script src="lib/main.js"></script>
 
-  <script src="lib/main.js"></script>
+        <script></script>
 
-  <script>
+        <title>Matheus Mariano - Portfólio</title>
+    </head>
 
-  </script>
+    <body>
+        <section class="main-container">
+            <section class="up-button">
+                <a href="#" onclick="toTheTop(event)">⬆️</a>
+            </section>
 
-  <title>Matheus Mariano - Portfólio</title>
-</head>
+            <section class="main-content">
+                <aside class="myself-image">
+                    <img
+                        src="images/myself.png"
+                        width="208"
+                        height="208"
+                        alt="Foto de Perfil."
+                        srcset=""
+                    />
+                </aside>
+                <h1>Matheus Mariano</h1>
+                <hr />
+                <aside class="overview" id="overview">
+                    <p>
+                        Desenvolvedor de software especializado em padrões RFC &
+                        normas ISO <br />
+                        talvez você não saiba, mas seu software precisa de mim
+                        :)
 
-<body>
+                        <span class="joke">
+                            <a
+                                href="https://ko-fi.com/matheusdsm"
+                                target="_blank"
+                            >
+                                <p>Um tip?</p>
+                            </a>
+                        </span>
+                    </p>
+                </aside>
+            </section>
 
-  <section class="main-container">
+            <section class="graduations" id="graduations">
+                <hr />
+                <h1>Formação Acadêmica</h1>
+                <hr />
+                • ETEC <b>(Escola Técnica Estadual de Itanhaém)</b> <br />
+                – Curso: <b>Desenvolvimento de Sistemas;</b> <br />
+                <b>Conclusão: 2023</b>
+                <br />
+                <br />
+                • ETEC <b>(Escola Técnica Estadual de Itanhaém)</b> <br />
+                – Curso: <b>Técnico em Informatica para Internet;</b> <br />
+                <b>Conclusão: 2016</b>
+                <hr />
+            </section>
 
-    <section class="up-button">
-      <a href="#" onclick="toTheTop(event)">⬆️</a>
-    </section>
+            <section class="courses projects">
+                <h1>Cursos Extracurriculares</h1>
+                <hr />
+                <img
+                    src="images/scrum.png"
+                    alt="Certificado em Scrum Master pela ECCouncil."
+                    srcset=""
+                />
+                <img
+                    src="images/curso-introducao-desenvolvimento-moderno.jpg"
+                    alt="Certificado em Desenvolvimento Moderno de Software pela DIO."
+                    srcset=""
+                />
+                <img
+                    src="images/curso-banco-de-dados-ifsul.jpg"
+                    alt="Certificado em Banco de Dados pelo IFSul."
+                    srcset=""
+                />
+                <img
+                    src="images/curso-midias-digitais-ufes.jpg"
+                    alt="Certificado Comunicação em Mídias Digitais pela UFES."
+                    srcset=""
+                />
 
-    <section class="main-content">
-      <aside class="myself-image">
-        <img src="images/myself.png" width="208" height="208" alt="Foto de Perfil." srcset="">
-      </aside>
-      <h1>Matheus Mariano</h1>
-      <hr>
-      <aside class="overview" id="overview">
-        <p>
-          Desenvolvedor de software especializado em padrões RFC & normas ISO <br>
-          talvez você não saiba, mas seu software precisa de mim :)
+                <img
+                    src="images/curso-educacao-financeira-enap.jpg"
+                    alt="Certificado em Educação Financeira pelo ENAP."
+                    srcset=""
+                />
+            </section>
 
+            <hr />
 
-          <span class="joke"> <a href="https://ko-fi.com/matheusdsm" target="_blank">
-              <p> Um tip? </p>
-            </a> </span>
-        </p>
-      </aside>
-    </section>
+            <section class="projects">
+                <h1 id="projects">Projetos</h1>
+                <hr />
+                <img
+                    src="images/adoteumanimal-project.png"
+                    alt="Calibre seu monitor manualmente."
+                    srcset=""
+                />
+                <a
+                    href="https://matheusdsm.github.io/kalibrator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/kalibrator-project.png"
+                        alt="Calibre seu monitor manualmente."
+                        srcset=""
+                /></a>
+                <a
+                    href="https://matheusdsm.github.io/uuid-generator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/uuid-project.png"
+                        alt="Gerador de UUID Screenshot."
+                        srcset=""
+                /></a>
+                <a
+                    href="https://matheusdsm.github.io/shortlogging/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/shortlogging-project.png"
+                        alt="Abreviador de Comandos para Debug Javascript."
+                        srcset=""
+                /></a>
+                <a
+                    href="https://marianosbuilder.matheusmariano.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/marianosbuilder-project.png"
+                        alt="Calculador de Elixir para Clash Royale."
+                        srcset=""
+                /></a>
+                <a
+                    href="https://hidrate-me.matheusmariano.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/hidrateme-project.png"
+                        alt="Guia de hidratação."
+                        srcset=""
+                /></a>
+            </section>
 
-    <section class="graduations" id="graduations">
-      <hr>
-      <h1>Formação Acadêmica</h1>
-      <hr>
-      • ETEC <b>(Escola Técnica Estadual de Itanhaém)</b> <br> – Curso: <b>Desenvolvimento de Sistemas;</b> <br>
-      <b>Conclusão: 2023</b>
-      <br>
-      <br>
-      • ETEC <b>(Escola Técnica Estadual de Itanhaém)</b> <br> – Curso: <b>Técnico em Informatica para
-        Internet;</b> <br> <b>Conclusão: 2016</b>
-      <hr>
+            <section class="links">
+                <hr />
+                <h1 class="others" id="others">Outras Informações</h1>
+                <hr />
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/matheus-mariano-in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <h4>LinkedIn</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/matheusdsm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <h4>Github</h4>
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-    </section>
-
-    <section class="projects">
-
-      <h1>Cursos Extracurriculares</h1>
-      <hr>
-      <img src="images/curso-midias-digitais-ufes.jpg" alt="Certificado Comunicação em Mídias Digitais pela UFES."
-        srcset="">
-      <img src="images/curso-introducao-desenvolvimento-moderno.jpg"
-        alt="Certificado em Desenvolvimento Moderno de Software pela DIO." srcset="">
-      <img src="images/curso-educacao-financeira-enap.jpg" alt="Certificado em Educação Financeira pelo ENAP."
-        srcset="">
-      <img src="images/curso-banco-de-dados-ifsul.jpg" alt="Certificado em Banco de Dados pelo IFSul." srcset="">
-
-    </section>
-
-    <hr>
-
-    <section class="projects">
-      <h1 id="projects">Projetos</h1>
-      <hr>
-      <a href="https://matheusdsm.github.io/kalibrator/" target="_blank"><img src="images/kalibrator-project.png"
-          alt="Calibre seu monitor manualmente." srcset=""></a>
-      <a href="https://matheusdsm.github.io/uuid-generator/" target="_blank"><img src="images/uuid-project.png"
-          alt="Gerador de UUID Screenshot." srcset=""></a>
-      <a href="https://matheusdsm.github.io/shortlogging/" target="_blank"><img src="images/shortlogging-project.png"
-          alt="Abreviador de Comandos para Debug Javascript." srcset=""></a>
-    </section>
-
-    <section class="links">
-      <hr>
-      <h1 class="others" id="others">Outras Informações</h1>
-      <hr>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/matheus-mariano-869600127/" target="_blank">
-            <h4>Linkedin</h4>
-          </a></li>
-        <li><a href="https://github.com/matheusdsm" target="_blank">
-            <h4>Github</h4>
-          </a></li>
-      </ul>
-    </section>
-
-    <section class="footer shadow">
-      <h4>
-        <p>
-          Todos os direitos reservados
-          ©
-          <script> const d = new Date();
-            year = d.getFullYear();
-            document.write(year);
-          </script>
-        </p>
-      </h4>
-    </section>
-
-  </section>
-
-</body>
-
+            <section class="footer shadow">
+                <h4>
+                    <p>
+                        Todos os direitos reservados ©
+                        <script>
+                            const d = new Date();
+                            year = d.getFullYear();
+                            document.write(year);
+                        </script>
+                    </p>
+                </h4>
+            </section>
+        </section>
+    </body>
 </html>
